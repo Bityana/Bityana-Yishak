@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6cd7645a49.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="image/bityanalogo.png" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Projects</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <h1>
+                Python and Web Developer
+            </h1>
+            
+        </div>
+    </div>
+
+</div>
+<!-- ---------about-------->
+<div id ='about'>
+    <div class="container">
+        <div class ="row">
+            <div class="about-col-1">
+                <img src="image/withapurse.png" class="round-image resized-image" alt="Round Resized Image">
+            </div>
+            <div class="about-col-2">
+                <h1 class ="Sub-title"> About Me</h1>
+                <p>As a highly motivated Python and Web Developer, I am dedicated to pursuing a career in the 
+                    tech industry. I am passionate about innovation and possess a strong foundation in data analysis, 
+                    software development, and web technologies. Beyond my field, I am an outgoing and friendly individual 
+                    who loves exploring different cultures and traveling. I believe that diverse perspectives contribute 
+                    to technological advancements that can positively impact human life. Since I first received a desktop
+                    computer in 7th grade, I have been fascinated by technology and constantly seek opportunities to learn
+                    and experiment with new advancements. I am particularly excited about contributing to innovative and
+                    impactful projects and organizations that value diversity, creativity, and collaboration.
+                </p>
+               
+                <div class="Projects">
+                    <p class ="tab-links active-link" onclick="opentab('skills')">Skill</p>
+                    <p class ="tab-links"onclick="opentab('experience')">Experience</p>
+                    <p class ="tab-links" onclick="opentab('educations')">Educations</p>
+                </div>  
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Python</span><br>Designing Web/App Games</li>
+                        <li><span>Web development</span><br>Websites & Chrome Extension</li>
+                        <li><span>Blender 3.0</span><br>3D animated video of New York City  </li>
+                    </ul>
+                </div>     
+                <div class="tab-contents " id="experience">
+                    <ul>
+                        <li><span>May 2022 - June 2022</span><br>Web/App Developer Intern at Diversity</li>
+                        <li><span> August 2019 - May 2022</span><br>Math Tutor at Southwest Minnesota State University</li>
+                        <li><span>05/2022 - Current</span><br>DSP at Prairie Community Service</li>
+                    </ul>
+                </div>     
+                <div class="tab-contents" id = "educations">
+                    <ul>
+                        <li><span>Bachelors</span><br>Computer Science at SMSU</li>
+                        <li><span>Python by Dr.Angela Yu </span><br>100 days of code at Udemy</li>
+                        <li><span>Debugging</span><br>JavaScript, Python, CSS and TypeScript at Diversity</li>
+                    </ul>
+                </div>              
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------------------services -------------->
+<div id="services">
+    <div class="container">
+        <h1 class ="Sub-title"> My Projects</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-bookmark"></i>
+                <h1>Websites & Chrome Extensions</h1>
+                <p>Developed an alphabetic bookmarking extension for Chromium-based browsers using 
+                    JavaScript, CSS, and HTML</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h1>Web Design</h1>
+                <p>Developed Personal Portfolio Website for personal project.</p>
+                <p>Collaborated on a group project to automate supermarket sales and purchases, developing 
+                    an inventory management system.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-python"></i>
+                <h1>Python Projects</h1>
+                <p>During my 100 Days of code. I have done more than 20 python projects
+                   including games that are both Web and App based.😊
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div> 
+
+    </div>
+</div>
+<!-- --------------portfolio------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class ="Sub-title"> My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="image/coffeemachine.png">
+                <div class="layer">
+                    <h3>coffeemachine</h3>
+                    <p>By using python class, making coffee machine that charge for <br> order and give change. 
+                        Also give anoption to choice and tell<br> if resource is out to make the coffee kind chosen.
+                        
+                    </p>
+                   
+                    <p><br> Click the button below to see the python code.</p>
+                    <a href="image/Coffee_machine/main.py"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="image/ponggame.png">
+                <div class="layer">
+                    <h3>Pong Game</h3>
+                    <p>By using python and class inherit <br> from turtle and making a pong game is that is played by keyboard<br>
+                        the game keep score from each side and tell the winner.
+                    </p>
+                    
+                    <p><br> Click the button below to see the python code.</p>
+                    <a href="image/pong-game/main.py"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="image/Snackgame.png">
+                <div class="layer">
+                    <h3>Snack Game</h3>
+                    <p>By using python and class inherit <br> from turtle and making a Snack game is that is played by keyboard.<br>
+                        This game will keep the higher score on a text <br> file and tell when there is higher score than previous time.
+                        
+                    </p>
+                    
+                    <p><br> Click the button below to see the python code.</p>
+                    <a href="image/snack_game/main.py"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="image/turtle game.txt" class="btn"> See more</a>
+    </div>
+</div>
+
+<!--------------------contact---------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="Sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>  Bityanahabtamu2000@gmail.com</p>
+                <p> <i class="fa-solid fa-phone"></i> (405) 760-5488</p>
+                <div class="social-icon">
+                    <a href="https://www.linkedin.com/in/bityana-yishak-53a53717a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BkcoqISitSFOPp42lajHLgg%3D%3D"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/bitu_yishak/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg">  </span>
+            </div>
+            <div class="contact-left">
+                
+            </div>
+        </div>
+    
+</div>
+
+
+
+
+
+
+
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab");
+
+        for (tablink of tablinks) {
+            if (tablink.getAttribute("onclick") === `opentab('${tabname}')`) {
+                tablink.classList.add("active-link");
+                break;
+            }
+        }
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx-iwHciELOBXqhoxKB2-U-MtgWwHNzOQr5_uO6pULm72xjbrTaB0WGLdmo5Fo6k6oqTA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Thank you for contacting me"
+            setTimeout(function(){
+                msg.innerHTML =""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
