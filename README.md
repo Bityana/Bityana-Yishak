@@ -1,4 +1,4 @@
-#My Portfolio Website
+# Personal Portfolio Website
 This repository hosts my personal portfolio website, showcasing some of my works and projects. The website is built using simple JavaScript, HTML, and CSS, and also includes my Python game codes.
 
 Features:
