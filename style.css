@@ -14,12 +14,23 @@ body{
 }
 
 #header{
+    position: relative
     width:auto ;
     height: 120vh;
-    background-image: url(image/video_23.mp4);
     background-size: cover;
     background-position:center;
    
+}
+#header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: -1;
 }
 .container{
     padding: 10px 5%;
