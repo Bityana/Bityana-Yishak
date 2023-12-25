@@ -14,11 +14,11 @@ body{
 }
 
 #header{
-    width:auto ;
+    width: auto;
     height: 120vh;
     background-image: url(image/homepagebg.png);
     background-size: cover;
-    background-position:center;
+    background-position: center;
    
 }
 
