@@ -17,8 +17,7 @@ body{
     position: relative
     width:auto ;
     height: 120vh;
-    background-size: cover;
-    background-position:center;
+    overflow: hidden;
    
 }
 #header video {
