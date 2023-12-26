@@ -16,7 +16,7 @@ body{
 #header{
     width: auto;
     height: 120vh;
-    background-image: url(image/bg_home.png);
+    background-image: url(image/background.png);
     background-size: cover;
     background-position: center;
    
@@ -45,7 +45,7 @@ nav ul li{
     margin: 10px 15px;
 }
 nav ul li a{
-    color: #0908084;
+    color: #f0e4e4;
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -55,7 +55,7 @@ nav ul li a::after {
   content: '';
   width: 0;
   height: 3px;
-  background: #090808;
+  background: #fefcfc;
   position: absolute;
   left: 0;
   bottom: -6px;
