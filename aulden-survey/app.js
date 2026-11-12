@@ -21,16 +21,15 @@
   const value=id=>form.querySelector(`input[name="${id}"]:checked`)?.value;
   const toggle=(id,show)=>{const field=form.querySelector(`[data-question="${id}"]`);field.hidden=!show;field.disabled=!show;if(!show)field.querySelectorAll('input').forEach(input=>input.checked=false);};
   function branches(){
-    const eligible=value('q1')!=='no'; toggle('q2',eligible);
-    const use=value('q2'); const currentUser=eligible&&['pilot','regular'].includes(use);
-    ['q3','q4','q5','q6'].forEach(id=>toggle(id,currentUser));
-    quantumSection.hidden=!eligible;
-    ['q7','q8'].forEach(id=>toggle(id,eligible));
+    const eligible=value('q1')!=='no';
+    ['q2','q3','q4','q5','q6','q7','q8'].forEach(id=>toggle(id,true));
+    quantumSection.hidden=false;
     button.hidden=!eligible;
     document.getElementById('participant-info').hidden=!eligible||!state.collectionEnabled;
-    if(!eligible){count.textContent='1 question';note.textContent='Thank you. These questions are for business owners and people who help choose business technology.';note.hidden=false;}
-    else if(['none','unsure'].includes(use)){count.textContent='2 AI questions + 2 optional';note.textContent='You can finish here, or answer the optional quantum questions.';note.hidden=false;}
-    else{count.textContent='6 AI questions + 2 optional';note.hidden=true;}
+    count.textContent='6 AI questions + 2 optional';
+    if(!eligible){note.textContent='These questions are for business owners and people who help choose business technology. You can view all questions, but please do not submit if this does not describe your role.';note.hidden=false;}
+    else if(['none','unsure'].includes(value('q2'))){note.textContent='You can skip questions 3–6 if they do not apply to your business. The quantum questions are optional too.';note.hidden=false;}
+    else{note.hidden=true;}
   }
   form.addEventListener('change',event=>{
     const input=event.target;if(!(input instanceof HTMLInputElement))return;
