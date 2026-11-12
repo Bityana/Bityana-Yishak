@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Six quick AI questions and two optional quantum security questions.">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#f4f0e8">
+  <link rel="canonical" href="https://bityana.github.io/Bityana-Yishak/aulden-survey/">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./survey.css">
+  <title>AI at your business · Aulden</title>
+  <script src="./questions.js" defer></script>
+  <script src="./config.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <main class="survey">
+    <header class="survey-header">
+      <div class="brand">AULDEN<span>.</span></div>
+      <h1>AI at your business</h1>
+      <p class="survey-length"><strong id="question-count">6 AI questions + 2 optional</strong><span aria-hidden="true"> · </span>About 3 minutes</p>
+      <p class="instructions">No names needed. You can skip any question.</p>
+      <p class="preview-notice" id="collection-notice">Loading questionnaire…</p>
+    </header>
+    <form id="survey-form" autocomplete="off">
+      <div id="questions"></div>
+      <details id="quantum-section" class="optional-section"><summary>Optional: 2 questions about quantum security</summary><p class="question-help optional-intro">You can leave this whole section blank.</p><div id="quantum-questions"></div></details>
+      <section id="participant-info" class="participant-info" hidden><p>Voluntary survey by Bityana Yishak / Aulden for a possible research report. Your choices do not affect event access or services. No names or contact details are requested. Answers are stored privately for analysis.</p><p>Questions? <a href="mailto:bityana.yishak@getaulden.com">bityana.yishak@getaulden.com</a></p><label class="consent-line"><input id="consent" type="checkbox">I am 18 or older and choose to take part.</label></section>
+      <div class="honey-field" aria-hidden="true"><label>Leave empty<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+      <p id="branch-note" class="branch-note" role="status" hidden></p>
+      <button class="finish-button" id="finish-button" type="submit" disabled>Loading…</button>
+      <p id="finish-message" class="finish-message" role="status" hidden></p>
+    </form>
+  </main>
+</body>
+</html>

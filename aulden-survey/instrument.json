@@ -1,0 +1,242 @@
+{
+  "version": "1.2",
+  "core": [
+    {
+      "id": "q1",
+      "number": "01",
+      "topic": "Role",
+      "type": "single",
+      "title": "Do you own a business or help choose its technology?",
+      "options": [
+        [
+          "yes",
+          "Yes"
+        ],
+        [
+          "no",
+          "No"
+        ]
+      ],
+      "note": "Intended respondents are adults who own a business or help choose its technology. A No answer hides the remaining questions. A missing answer does not establish eligibility. Final adult eligibility and participant information must be settled before live collection."
+    },
+    {
+      "id": "q2",
+      "number": "02",
+      "topic": "AI use",
+      "type": "single",
+      "title": "How has your business used AI in the past 30 days?",
+      "help": "For example, ChatGPT or other tools that create text, images, or code.",
+      "options": [
+        [
+          "none",
+          "Not used it"
+        ],
+        [
+          "pilot",
+          "Only tried it"
+        ],
+        [
+          "regular",
+          "Used it for regular work"
+        ],
+        [
+          "unsure",
+          "Not sure"
+        ]
+      ],
+      "note": "Only tried it and Used it for regular work reveal Q3–Q6 automatically on the same page. Nonuse and uncertainty end after Q2. Keep uncertainty separate from nonuse. An unanswered item remains missing."
+    },
+    {
+      "id": "q3",
+      "number": "03",
+      "topic": "Responsibility",
+      "type": "multi",
+      "title": "Who decides how AI is used at your business?",
+      "help": "Choose all that apply.",
+      "options": [
+        [
+          "internal",
+          "Someone in our business"
+        ],
+        [
+          "adviser",
+          "An outside IT adviser"
+        ],
+        [
+          "provider",
+          "The AI tool provider"
+        ],
+        [
+          "none",
+          "No one has been assigned"
+        ],
+        [
+          "unsure",
+          "Not sure"
+        ]
+      ],
+      "exclusive": [
+        "none",
+        "unsure"
+      ],
+      "note": "Current AI users only. Captures reported responsibility inside and outside the business. It does not establish legal responsibility or effective oversight. No one has been assigned and Not sure are exclusive choices."
+    },
+    {
+      "id": "q4",
+      "number": "04",
+      "topic": "Information rules",
+      "type": "single",
+      "title": "Are there rules about what information can go into AI tools?",
+      "options": [
+        [
+          "written",
+          "Yes, written rules"
+        ],
+        [
+          "informal",
+          "Yes, informal rules"
+        ],
+        [
+          "none",
+          "No rules I know of"
+        ],
+        [
+          "unsure",
+          "Not sure"
+        ]
+      ],
+      "note": "Current users only. Keep written, informal, no known rules, and uncertainty separate. Having rules does not show that they are followed."
+    },
+    {
+      "id": "q5",
+      "number": "05",
+      "topic": "Checking results",
+      "type": "single",
+      "wide": true,
+      "title": "How often does someone check AI results before using them?",
+      "options": [
+        [
+          "always",
+          "Always"
+        ],
+        [
+          "usually",
+          "Usually"
+        ],
+        [
+          "sometimes",
+          "Sometimes"
+        ],
+        [
+          "rarely_never",
+          "Rarely or never"
+        ],
+        [
+          "not_used_results",
+          "We haven’t used any results yet"
+        ],
+        [
+          "unsure",
+          "Not sure"
+        ]
+      ],
+      "note": "Current users only. This measures reported checking frequency, not checking quality. The no-results option avoids treating experimentation as reliance on unchecked output. Rarely and never are combined in this shorter version."
+    },
+    {
+      "id": "q6",
+      "number": "06",
+      "topic": "Provider evaluation",
+      "type": "multi",
+      "wide": true,
+      "title": "How did you check the AI tool’s privacy?",
+      "help": "Choose all that apply.",
+      "options": [
+        [
+          "provider_info",
+          "Read the provider’s privacy information"
+        ],
+        [
+          "account_terms",
+          "Checked our account’s terms or settings"
+        ],
+        [
+          "internal_review",
+          "Had someone in our business review it"
+        ],
+        [
+          "outside_advice",
+          "Asked an IT or cybersecurity adviser"
+        ],
+        [
+          "not_checked",
+          "We haven’t checked"
+        ],
+        [
+          "unsure",
+          "Not sure"
+        ]
+      ],
+      "exclusive": [
+        "not_checked",
+        "unsure"
+      ],
+      "note": "Current users only. Distinguishes provider information, specific account information, internal review, and outside advice. The final two choices are exclusive. Responses do not demonstrate provider accuracy, legal compliance, or actual security."
+    }
+  ],
+  "optional": [
+    {
+      "id": "q7",
+      "number": "07",
+      "topic": "Quantum familiarity",
+      "type": "single",
+      "wide": true,
+      "title": "Before this event, how familiar were you with quantum-safe encryption?",
+      "help": "Encryption designed to resist attacks from future quantum computers. Also called post-quantum cryptography.",
+      "options": [
+        [
+          "not_heard",
+          "I had not heard of it."
+        ],
+        [
+          "heard_term",
+          "I had heard the term."
+        ],
+        [
+          "basics",
+          "I knew the basics."
+        ],
+        [
+          "explain_business",
+          "I could explain what it means for a business."
+        ]
+      ],
+      "note": "Optional. Self-reported familiarity before the event, not a technical knowledge test. Interpret retrospective answers cautiously if asked after the presentation."
+    },
+    {
+      "id": "q8",
+      "number": "08",
+      "topic": "Provider conversations",
+      "type": "single",
+      "title": "Before this event, had your business asked an IT or software provider about quantum-safe encryption?",
+      "options": [
+        [
+          "yes",
+          "Yes"
+        ],
+        [
+          "no",
+          "No"
+        ],
+        [
+          "unsure",
+          "Not sure"
+        ],
+        [
+          "not_applicable",
+          "Not applicable"
+        ]
+      ],
+      "note": "Optional. A reported conversation or inquiry, not evidence of technical readiness. No does not show a provider is unprepared."
+    }
+  ]
+}
